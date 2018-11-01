@@ -72,8 +72,8 @@ class VC_Landing: UITableViewController {
             previewPlayer.removeAllItems()
             previewPlayer.insert(AVPlayerItem(url: URL(string: url)!), after: nil)
             previewPlayer.play()
+            sz_playingUrl = url
         }
-        sz_playingUrl = url
     }
     
     func setupSearchAndDisplay() {
